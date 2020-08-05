@@ -1,0 +1,29 @@
+1)Import NumPy and Pandas for Reading CSV files and doing array conversion
+
+2) I have used the Sci-kit Learn library for Data Cleaning and for implementing the Random forest classifier.
+so I imported:
+	Train_test_split: for splitting train data for training and validation
+	ColumnsTransformer, labelEncoder and OneHotEncoder:
+	 for encoding color_type column into categories.
+	SimpleImputer: to removing null data, in out train.csv we have null data in condition column.
+	RandomForestClassifier: For creating our random forest model
+
+3) Reading train data
+4) Looked into the header
+5) separating the last two columns as target and remaining into the X column.
+6) Splitting into train test and split.
+7) replacing the null value with the mean of the data column
+8) Converting color column into categorical data using one-hot encoder
+9) Creating RandomForestClassifier object
+	a) first I trained as n_estimators = 5.
+	b) fit my model
+	c) predicting the model result
+	d) evaluating the result
+	e) follow all steps with n_estimators = 6
+10) Read my test data
+11) Did data engineering steps in train data, removing null value and encoded categorical column.
+12) Predicted the result using the predict function
+13) Written the data into the file.
+
+
+

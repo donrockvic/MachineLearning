@@ -8,6 +8,7 @@ __pycache__/
 /Large_data
 # Distribution / packaging
 .Python
+/Dataset
 build/
 develop-eggs/
 dist/

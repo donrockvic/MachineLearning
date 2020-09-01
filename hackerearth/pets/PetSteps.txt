@@ -1,6 +1,6 @@
 1)Import NumPy and Pandas for Reading CSV files and doing array conversion
 
-2) I have used the Sci-kit Learn library for Data Cleaning and for implementing the Random forest classifier.
+2) I have used the Sci-kit Learn library for Data Cleaning and for implementing the Random forest classifier and XGBOOST.
 so I imported:
 	Train_test_split: for splitting train data for training and validation
 	ColumnsTransformer, labelEncoder and OneHotEncoder:
@@ -12,14 +12,18 @@ so I imported:
 4) Looked into the header
 5) separating the last two columns as target and remaining into the X column.
 6) Splitting into train test and split.
-7) replacing the null value with the mean of the data column
-8) Converting color column into categorical data using one-hot encoder
+7) For handling missing data I used:
+	i. Replaced with Mean
+	ii. A third category flost(3)
+	iii. Creaed Random forest classifier for predicting null condition value from rest of dataset.
+8) Converting color column into categorical data using one-hot encoder ans ColumsnTransfer classes
 9) Creating RandomForestClassifier object
-	a) first I trained as n_estimators = 5.
+	a) first I trained as n_estimators = 100.
 	b) fit my model
 	c) predicting the model result
 	d) evaluating the result
-	e) follow all steps with n_estimators = 6
+	e) follow all steps with n_estimators = 200
+	f) I repeated the same steps with XGBOOST with 600 estiamtotrs as well
 10) Read my test data
 11) Did data engineering steps in train data, removing null value and encoded categorical column.
 12) Predicted the result using the predict function
